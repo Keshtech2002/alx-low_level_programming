@@ -18,16 +18,16 @@ int main(void)
 			{
 				continue;
 			}
-			else if (d > a)
+			else if (a > d)
 			{
 				continue;
 			}
 			else
 			{
 				putchar(a + '0');
-                                putchar(d + '0');
-                                putchar(',');
-                                putchar(' ');
+				putchar(d + '0');
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
