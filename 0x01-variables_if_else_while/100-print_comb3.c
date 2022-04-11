@@ -8,30 +8,24 @@
 
 int main(void)
 {
-	int a, d;
+int a;
+int d;
 
-	for (a = 0; a <= 9; a++)
-	{
-		for (d = 0; d <= 9; d++)
-		{
-			if (a == d)
-			{
-				continue;
-			}
-			else if (a > d)
-			{
-				continue;
-			}
-			else
-			{
-				putchar(a + '0');
-				putchar(d + '0');
-				putchar(',');
-				putchar(' ');
-			}
-		}
-	}
-	putchar('\n');
+for (a = 0; a <= 9; a++)
+{
+for (d = a + 1; d <= 9; d++)
+{
+putchar(a + '0');
+putchar(d + '0');
 
-	return (0);
+if (a < 8)
+{
+putchar(',');
+putchar(' ');
+}
+}
+}
+putchar('\n');
+
+return (0);
 }
