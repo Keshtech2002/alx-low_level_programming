@@ -5,7 +5,7 @@
  * _strcmp - compare two strings
  * @s1: first string in comparison
  * @s2: second string in comparison
- * Return: 0 if they are equal, 15 if s1>s2, -15 if s2>s1 in ascii
+ * Return: 0 if they are equal, 1 if s1>s2, -1 if s2>s1 in ascii
  */
 
 int _strcmp(char *s1, char *s2)
@@ -32,11 +32,11 @@ int _strcmp(char *s1, char *s2)
 
 	if (flag == 1)
 	{
-		return (15);
+		return (1);
 	}
 	else if (flag == -1)
 	{
-		return (-15);
+		return (-1);
 	}
 
 	return (0);
