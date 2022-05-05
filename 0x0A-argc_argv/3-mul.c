@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 	int num2;
 	int multiply;
 
-	if (argc > 1)
+	if (argc == 3)
 	{
 		num1 = atoi(argv[1]);
 		num2 = atoi(argv[2]);
