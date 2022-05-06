@@ -20,9 +20,11 @@ char *str_concat(char *s1, char *s2)
 
 	while (s1[m] != '\0')
 		len1++;
+		m++;
 
 	while (s2[n] != '\0')
 		len2++;
+		n++;
 
 	size = len1 + len2;
 
