@@ -11,7 +11,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *concat;
-	int i = 0, m = 0, n = 0, len1 = 0, len2 = 0, size = 0;
+	int i = 0, j = 0, m = 0, n = 0, len1 = 0, len2 = 0, size = 0;
 
 	if (s1 == NULL)
 		s1 = " ";
@@ -43,7 +43,7 @@ char *str_concat(char *s1, char *s2)
 			*(concat + i) = *(s1 + i);
 		else
 		{
-			*(concat + i) = *(s2 + i);
+			*(concat + i) = *(s2 + j);
 		}
 		i++;
 	}
