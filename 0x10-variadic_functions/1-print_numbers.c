@@ -3,17 +3,16 @@
 #include <stdarg.h>
 
 /**
- * print_strings - Prints strings, followed by a new line.
- * @separator: To separate the stings.
- * @n: The number of strings passed to the function.
- * @...: A variable number of strings to be printed.
+ * print_numbers - print numbers followed by a new line
+ * @separator: To separate the numbers.
+ * @n: The number of integers passed to the function.
+ * @...: A variable number of integers to be printed.
  *
  * Description: If separator is NULL, it is not printed.
- *              If one of the strings if NULL, (nil) is printed instead.
  * Return: NULL
  */
 
-void print_strings(const char *separator, const unsigned int n, ...)
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list li;
 	unsigned int i;
