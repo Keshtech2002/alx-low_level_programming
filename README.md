@@ -8,11 +8,11 @@ rom sprint 1
 ### To compile my C codes:
 
 ```
-gcc -Wall -pedantic -Werror -Wextra -std=gnu89 file1.c file2.c -o execfile
+$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 file1.c file2.c -o execfile
 ```
 
 ### To run BETTY:
 
 ```
-betty file.c
+$ betty file.c
 ```
